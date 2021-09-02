@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book achived</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+<body>
+  <div>
+    <!-- Title -->
+    <h2 class="text-center mt-3 text-danger fs-1">Find your favourite Books</h2>
+  </div>
+    <section class="container my-2">
+      <!-- Input box -->
+      <div class="d-flex w-50 mx-auto mt-3 ">
+        <input type="text" class="form-control me-2" placeholder="Search Book" id="search-field"
+        />
+        <button onclick="searchbook()" type="button" class="btn btn-outline-success" id="search-btn">Search</button>
+      </div>
+    </section>
+    <!-- Books search list -->
+    <section id="Book-container py-5" class="container mt-2">
+      <p class="text-center fs-2 text-warning" id="error-messsage"></p>
+      <!-- Bookes -->
+      <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+      </div>
+  
+    </section>
+  <!-- JavaScript link -->
+  <script src="main.js"></script>
+</body>
+</html>
